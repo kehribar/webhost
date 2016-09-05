@@ -1,0 +1,114 @@
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++
++
++
++
++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<html lang="en">
+<head>
+	<title>ihsan Kehribar - personal webPage</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="../../resources/style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>   
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-43864002-1', 'kehribar.me');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div id="bigContainer">
+	<!--  -->
+		<div id="siteHeader">
+			<center>
+				<div style="position:relative; top:30px; font-size: 40px;">ihsan Kehribar</div>
+				<h3 style="position:relative; top:10px;">
+					<a href="../../index.html">.about</a>
+					&nbsp;&nbsp;
+					<a href="http://blog.kehribar.me">.blog</a>
+					&nbsp;&nbsp;
+					<a href="../../projects.html">.projects</a>
+					&nbsp;&nbsp;
+					<a href="../../contact.html">.contact</a>
+				</h3>
+			</center>
+		</div>
+	<!--  -->
+		<div id="container">
+
+		<div id="navigationLink" style="position: relative; top:35px; z-index:99;" >
+			<a href="./index.html#footer" style="float:right;"><i>Navigation</i></a>
+		</div>
+
+		<div id="mainContent">
+		<!-- main content starts -->
+
+		<h1>Intelligent electromagnet driver</h1>
+
+		<p>During my senior year at the college, me and my teammates were working on a Human-Computer Interaction technology called MagiTact for our senior project. In this technology, a permanent magnet is used to manipulate the electromagnetic field arround a mobile device which then interfaces with the internal compass(magnetometer) of the device. By analysing this additional magnetic field, user interaction can be created between the user and the mobile device.</p>
+
+		<p>In our study, we created an electromagnet module which can modulates its output power in a spesific frequency. Our aim was to have a multi user interaction with a single magnetometer by demodulating the effects of different magnets in different frequencies at the host side.</p>
+
+		<p>This board has an opamp+transistor based constant current source to drive the electromagnet coil. Also there is a quad-mosfet based H-bridge circuit to be able to change the direction of the current flowing in the electromagnet. Sine wave is generated via an I2C based 12bit DAC. The output frequency of this bord can be changed over USB via CDC based serial interface. PIC18F13K50 microcontroller is used as the main controller. There is also a charging circuitry for LiPo batteries when the device is connected to the USB.</p>
+
+		<p>Routing for this circuit is all done by myself. After routing, this board is manufactured via a LPKF milling machine available at my university then silkscreen is applied to the board manually with additional LPKF tools.</p>
+
+		<h2>Schematic</h2>
+
+		<p><img src="modulator_sch.png" alt="image" /></p>
+
+		<h2>Layout</h2>
+
+		<p><img src="modulator_brd.png" alt="image" /></p>
+
+		<h2>Build</h2>
+
+		<p><img src="modulator_build.jpg" alt="image" /></p>
+
+		<h2>Resources</h2>
+
+		<p><ul>
+			<li>
+			<a href="./modulator_sch.png">
+			Schematic</a> & 
+			<a href="modulator_brd.png">
+			Layout</a> in PNG format</li>
+			<li>
+			<a href="modulator.sch">
+			Schematic</a> & 
+			<a href="modulator.brd">
+			Layout</a> in EagleCAD format
+			</li>			
+		</ul></p>
+
+		<h2>License</h2>
+
+		<p>This project is published under the terms of the GNU General Public License, version 3 licence.</p>
+
+		<!-- main content ends -->
+		</div>
+
+		</div>
+
+		<div id="footer" style="line-height: 1.5em; font-size: 1.25em; background: #ddd; padding-right: 12px; padding-left: 10px;">
+		<a name="navigationLink"></a>
+			<p style="color: #333;">
+				<img src="../../resources/home-link@2x.png" height="15px">
+				<a href="../../index.html">homepage</a>
+				<img src="../../resources/arrow@2x.png" height="15px">
+				<a href="../../projects.html">projects</a>
+				<img src="../../resources/arrow@2x.png" height="15px">
+				
+				<a href="."><i>intelligent electromagnet driver</i></a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

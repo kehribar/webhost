@@ -1,0 +1,112 @@
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++
++
++
++
++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<html lang="en">
+<head>
+	<title>ihsan Kehribar - personal webPage</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="../../resources/style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>   
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-43864002-1', 'kehribar.me');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div id="bigContainer">
+	<!--  -->
+		<div id="siteHeader">
+			<center>
+				<div style="position:relative; top:30px; font-size: 40px;">ihsan Kehribar</div>
+				<h3 style="position:relative; top:10px;">
+					<a href="../../index.html">.about</a>
+					&nbsp;&nbsp;
+					<a href="http://blog.kehribar.me">.blog</a>
+					&nbsp;&nbsp;
+					<a href="../../projects.html">.projects</a>
+					&nbsp;&nbsp;
+					<a href="../../contact.html">.contact</a>
+				</h3>
+			</center>
+		</div>
+	<!--  -->
+		<div id="container">
+
+		<div id="navigationLink" style="position: relative; top:35px; z-index:99;" >
+			<a href="./index.html#footer" style="float:right;"><i>Navigation</i></a>
+		</div>
+
+		<div id="mainContent">
+		<!-- main content starts -->
+
+		<h1>DDS function generator</h1>
+
+		<p>This is a prototype of a DDS based function generator. By changing its onboard lookup table, this board can be used to generate an arbitrary waveform with an adjustable frequency. I was aiming to interface this board via an USB-I2C interface.</p>
+
+		<p>R2R ladder is used to create a very fast DAC stage to generate the waveforms. I've put a frequency adjustable 2nd order Sallen Key low pass filter to clear the harmonics as much as possible when using single frequency sine wave outputs. Also the offset of the output voltage can be adjusted digitally. Lastly, I've routed an hardware PWM output pin to the pulse pinheader which can be usefull as well.</p>
+
+		<p>I've ordered parts for this board but haven't populated yet ...</p>
+
+		<h2>Schematic</h2>
+
+		<p><img src="func_gen_sch.png" alt="image" /></p>
+
+		<h2>Layout</h2>
+
+		<p><img src="func_gen_brd.png" alt="image" /></p>
+
+		<h2>Build</h2>
+
+		<p><img src="func_gen_build.jpg" alt="image" /></p>
+
+		<h2>Resources</h2>
+
+		<p><ul>
+			<li>
+			<a href="./func_gen_sch.png">
+			Schematic</a> & 
+			<a href="func_gen_brd.png">
+			Layout</a> in PNG format</li>
+			<li>
+			<a href="func_gen.sch">
+			Schematic</a> & 
+			<a href="func_gen.brd">
+			Layout</a> in EagleCAD format
+			</li>
+		</ul></p>
+
+		<h2>License</h2>
+
+		<p>This project is published under the terms of the GNU General Public License, version 3 licence.</p>
+
+		<!-- main content ends -->
+		</div>
+
+		</div>
+
+		<div id="footer" style="line-height: 1.5em; font-size: 1.25em; background: #ddd; padding-right: 12px; padding-left: 10px;">
+		<a name="navigationLink"></a>
+			<p style="color: #333;">
+				<img src="../../resources/home-link@2x.png" height="15px">
+				<a href="../../index.html">homepage</a>
+				<img src="../../resources/arrow@2x.png" height="15px">
+				<a href="../../projects.html">projects</a>
+				<img src="../../resources/arrow@2x.png" height="15px">
+				
+				<a href="."><i>DDS function generator</i></a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
